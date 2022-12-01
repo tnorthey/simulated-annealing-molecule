@@ -903,8 +903,6 @@ class Simulated_Annealing:
 
             ##=#=#=# PCD & CHI2 CALCULATIONS #=#=#=##
             pcd_ = 100 * (iam_ / reference_iam - 1)
-            #abs_max = np.max(np.abs(pcd_))  # normalise to abs max
-            #pcd_ /= abs_max
             chi2_ = np.sum((pcd_ - target_pcd) ** 2) / qlen
             ##=#=#=# END PCD & CHI2 CALCULATIONS #=#=#=##
 
